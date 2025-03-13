@@ -1,0 +1,17 @@
+
+
+input{
+    border: none;
+}
+input > placeholder{
+    font-size: 0.1rem;
+}
+label{
+    font-size: 1.1rem;
+}
+#sub{
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 10px;
+}

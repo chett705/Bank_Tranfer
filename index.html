@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootscrap --------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="container-fluid  bg-light text-bg-info">
+            <div class="navbar container "> 
+                <div class="d-flex align-items-center">
+                    <a href="" class="fs-2 fw-bold text-light text-decoration-none">
+                        <div class="image" style="width: 50px ; height: 50px;">
+                            <img src="./image/image.png" alt="" class="w-100 rounded-5">
+
+                        </div>
+                    </a>
+                    
+                </div>
+                
+                <button class="btn d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        
+        <div class="offcanvas offcanvas-end" id="bar">
+            <div class="offcanvas-header border-bottom">
+                <a href="" class=" text-decoration-none text-black d">
+                   
+
+                </a>
+                <button class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <!-- Corrected nesting: <a> inside <li> -->
+                    <li>
+                        <a href="" class="nav-link py-2 text-dark fw-medium d-block">Profile</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link py-2 text-dark fw-medium d-block">Setting</a>
+                    </li>
+                    
+                    <li>
+                        <div class="dropdown">
+                            <!-- Dropdown button -->
+                            <button class="btn btn border-0 dropdown-toggle fw-medium py-2 text-dark w-100 text-start" 
+                                    type="button" 
+                                    data-bs-toggle="dropdown" 
+                                    aria-expanded="false">
+                                More
+                            </button>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Top up</a></li>
+                                <li><a class="dropdown-item" href="#">Exchange</a></li>
+                                <li><a class="dropdown-item" href="#">Loans</a></li>
+                                <li><a class="dropdown-item" href="#">Transfers</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <main class="container-fluid mt-4  me-3 ">
+        <div>
+            <h1​ class="text-warning fs-1">ការដាក់ប្រាក់</h1>
+            <h2 class="text-black">Cambodia Bank</h2>
+
+
+        </div>
+<!-- ----------------exchange -->
+        <div class="mt-4 input-group text-secondary">
+            <form action="" class="form-control">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="form-control shadow-none" aria-label="Text input with dropdown button" placeholder="គណនីជួញដូរ">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" ></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">Sevice</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                       
+                  </div><label for="" class="ms-2 text-secondary mb-2">ចំនួនទឺកប្រាក់</label>
+                <div class="input-group mb-3">
+                    
+                    <input type="number" class="form-control  border-end-0 shadow-none border-top-0 border-start-0 " aria-label="Text input with dropdown button​​ border-0 input-group " placeholder="គណនីជួញដូរ">
+                    
+                      <select name="" id="" class="select border-0 hw-none">
+
+                        <option value="">USA</option>
+                        <option value="">Riel</option>
+                        <option value="">bath</option>
+                      </select>
+                    
+                       
+                  </div>
+                  <label for="" class="text-secondary ms-3 ​   mt-2">ចំនួនទឺកប្រាក់បម្លែង</label>
+
+                <div class="input-group mb-3">
+                    
+                    <input type="number" class="form-control  border-end-0 shadow-none border-top-0 border-start-0 " aria-label="Text input with dropdown button​​ border-0 input-group " placeholder="">
+                    
+                      <select name="" id="" class="select border-0 hw-none">
+
+                        <option value="">USA</option>
+                        <option value="">Riel</option>
+                        <option value="">bath</option>
+                      </select>
+                    
+                       
+                  </div>
+                  <label for="" class="text-secondary ms-3 ​   mt-2">Bank</label>
+
+                  <div class="input-group mb-3 ">
+                    <input type="text" class="form-control shadow-none" aria-label="Text input with dropdown button" placeholder="">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" ></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Acleda</a></li>
+                        <li><a class="dropdown-item" href="#">ABA</a></li>
+                        <li><a class="dropdown-item" href="#">Wing</a></li>
+                      </ul>
+                       
+                  </div>
+                  <label for="" class="text-secondary ms-3 ​   mt-2">note</label>
+                  <div>
+                    <input type="text" class="form-control shadow-none" aria-label="Text input with dropdown button" placeholder="">
+                  </div>
+            </form>
+
+        </div>
+        
+    </main>
+    <footer class="  align-items-center mt-2 ms-5 box-center d-flex">
+        <div id="sub">
+            <button class="btn btn-warning ">ដាក់ប្រាក់</button>
+        </div>
+        
+    </footer>
+
+    
+</body>
+</html>
