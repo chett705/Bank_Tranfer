@@ -142,11 +142,36 @@
     </main>
     <footer class="  align-items-center mt-2 ms-5 box-center d-flex">
         <div id="sub">
-            <button class="btn btn-warning ">ដាក់ប្រាក់</button>
+            <button class="btn btn-warning " id="bank">ដាក់ប្រាក់</button>
         </div>
         
     </footer>
 
+
     
 </body>
+<script>
+    const bank = document.getElementById('bank');
+
+bank.addEventListener('click', () => {
+    // Create alert div
+    const alertDiv = document.createElement('div');
+    alertDiv.className = 'alert alert-warning alert-dismissible fade show';
+    alertDiv.role = 'alert';
+    alertDiv.innerHTML = `
+        Deposit successfully!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+
+    // Append alert to the body or a specific container
+    document.body.appendChild(alertDiv);
+
+    // Optional: Remove alert after 3 seconds
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 3000);
+});
+
+
+</script>
 </html>
