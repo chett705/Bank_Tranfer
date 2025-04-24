@@ -123,7 +123,7 @@
                   <label for="" class="text-secondary ms-3 ​   mt-2">Bank</label>
 
                   <div class="input-group mb-3 ">
-                    <input type="number" class="form-control shadow-none" aria-label="Text input with dropdown button" placeholder="">
+                    <input type="text" class="form-control shadow-none" aria-label="Text input with dropdown button" placeholder="">
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" ></button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Acleda</a></li>
@@ -143,7 +143,7 @@
     </main>
     <footer class="  align-items-center mt-2 ms-5 box-center d-flex">
         <div id="sub">
-            <button class="btn btn-warning  " id="bank"> <a href="./index.html" class="text-decoration-none">ដាក់ប្រាក់</a></button>
+            <button class="btn btn-warning  " id="bank"> <a href="./index.html" class="text-decoration-none" onclick="swalert()">ដាក់ប្រាក់</a></button>
         </div>
         
     </footer>
@@ -152,26 +152,11 @@
     
 </body>
 <script>
-    const bank = document.getElementById('bank');
+    function swalert(){
+        alert("success fully");
+    }
 
-bank.addEventListener('click', () => {
-    // Create alert div
-    const alertDiv = document.createElement('div');
-    alertDiv.className = 'alert alert-warning alert-dismissible fade show';
-    alertDiv.role = 'alert';
-    alertDiv.innerHTML = `
-        Deposit successfully!
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    `;
 
-    // Append alert to the body or a specific container
-    document.body.appendChild(alertDiv);
-
-    // Optional: Remove alert after 3 seconds
-    setTimeout(() => {
-        alertDiv.remove();
-    }, 3000);
-});
 
 
 </script>
